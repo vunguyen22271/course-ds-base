@@ -1,0 +1,36 @@
+{
+	"name": "Universal Development Container Image by Microsoft custom",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+        "version": "latest"
+    }
+  },
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"editor.tabSize": 2,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+        "editor.guides.bracketPairs": true,
+        "workbench.colorTheme": "Visual Studio Dark"
+      },
+			"extensions": [
+				"bracketpaircolordlw.bracket-pair-color-dlw",
+				"trinm1709.dracula-theme-from-intellij",
+				"mhutchie.git-graph",
+				"github.copilot",
+				"vscode-icons-team.vscode-icons",
+        "hashicorp.terraform",
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+			]
+		}
+	}
+}
+
